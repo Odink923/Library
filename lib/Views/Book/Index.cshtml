@@ -1,0 +1,40 @@
+﻿@model List<lib.Models.Book>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalSignin">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+                <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                <h1 class="fw-bold mb-0 fs-2">Add book</h1>
+             
+            </div>
+
+            <div class="modal-body p-5 pt-0">
+                <form action="/Book/Add" method="post">
+                    <div class="form-floating mb-3">
+                        <input type="text" name="Name" class="form-control rounded-3" id="floatingInput" placeholder="Name" />
+                        <label for="floatingInput">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="Autor" class="form-control rounded-3" placeholder="Autor">
+                        <label for="floatingPassword">Autor</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="Pictures" class="form-control rounded-3" id="floatingPassword" placeholder="Pictures">
+                        <label for="floatingPassword">Pictures</label>
+                    </div>
+                    @if (ViewBag.UserId != -1)
+                    {
+                        <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" value="Add">Add</button>
+                    }
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
