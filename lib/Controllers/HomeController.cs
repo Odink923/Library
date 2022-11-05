@@ -12,7 +12,7 @@ namespace lib.Controllers
     public class HomeController : Controller
     {
     
-        private DataContext bookDb = new DataContext("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MyBookDb81;Integrated Security=True;");
+        private DataContext bookDb = new DataContext("Data Source=SQL8003.site4now.net;Initial Catalog=db_a8eb5b_lib;User Id=db_a8eb5b_lib_admin;Password=oleh2002");
         // GET: Home
         public ActionResult Index()
         {

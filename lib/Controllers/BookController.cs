@@ -12,7 +12,7 @@ namespace lib.Controllers
     public class BookController : Controller
     {
         private LoginService authorizeService = new LoginService();
-        private DataContext bookDb = new DataContext("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MyBookDb81;Integrated Security=True;");
+        private DataContext bookDb = new DataContext("Data Source=SQL8003.site4now.net;Initial Catalog=db_a8eb5b_lib;User Id=db_a8eb5b_lib_admin;Password=oleh2002");
         public ActionResult Index()
         {
 
