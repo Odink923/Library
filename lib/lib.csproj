@@ -124,6 +124,8 @@
     <Content Include="Views\Home\Log.cshtml" />
     <Content Include="Views\Authorize\Error.cshtml" />
     <Content Include="Views\Home\General.cshtml" />
+    <None Include="Properties\PublishProfiles\odink923-001-site1 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\odink923-001-site1 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
